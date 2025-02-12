@@ -36,10 +36,14 @@ body{
 
 .header-menu-link{
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600px;
     color: var(--color-terciario);
     text-decoration: none;
+}
+
+.imagen{
+    width: 50%;
 }
 
 .presentacion{
@@ -57,7 +61,7 @@ body{
 }
 
 .titulo-presentacion{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuente-krona);
 }
 
@@ -66,7 +70,7 @@ body{
 }
 
 .parrafo-presentacion{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
 }
 
@@ -85,8 +89,8 @@ body{
     padding: 21.5px 0;
     border-radius: 8px;
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
-    font-weight: 600px;
+    font-size: 1.5rem;
+    font-weight: 50%;
     text-decoration: none;
     color: var(--color-cuaternario);
     border: 2px solid var(--color-secundario);
@@ -97,8 +101,8 @@ body{
 
 .presentacion-enlaces-subtitulo{
     font-family: var(--fuente-krona);
-    font-size: 24px;
-    font-weight: 400px;
+    font-size: 1.5rem;
+    font-weight: 50%;
 }
 
 .redes-presentacion-link:hover{
@@ -107,12 +111,32 @@ body{
 
 .footer{
     background-color: var(--color-secundario);
-    padding: 24px;
+    padding: 1.5rem;
     color: var(--color-footer);
     text-align: center;
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400px;
+}
+
+@media (max-width: 1200px){
+
+    .header{
+        padding: 10%;
+    }
+
+    .header-menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding: 5%;
+    }
+
+    .texto-presentacion{
+        width: auto;
+    }
 }
 
 
